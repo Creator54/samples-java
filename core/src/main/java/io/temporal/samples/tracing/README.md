@@ -24,13 +24,13 @@ if these ports are different in your setup to reflect the changes in [JagerUtils
 * For OpenTelemetry:
 
 ```bash
-./gradlew -q execute -PmainClass=io.temporal.samples.opentracing.TracingWorker
+./gradlew -q execute -PmainClass=io.temporal.samples.tracing.TracingWorker
 ```
 
 * For OpenTracing:
 
 ```bash
-./gradlew -q execute -PmainClass=io.temporal.samples.opentracing.TracingWorker --args="OpenTracing"
+./gradlew -q execute -PmainClass=io.temporal.samples.tracing.TracingWorker --args="OpenTracing"
 ```
 
 2. Start the Starter
@@ -38,13 +38,13 @@ if these ports are different in your setup to reflect the changes in [JagerUtils
 * For OpenTelemetry
 
 ```bash
-./gradlew -q execute -PmainClass=io.temporal.samples.opentracing.Starter
+./gradlew -q execute -PmainClass=io.temporal.samples.tracing.Starter
 ```
 
 * For OpenTracing
 
 ```bash
-./gradlew -q execute -PmainClass=io.temporal.samples.opentracing.Starter --args="OpenTracing"
+./gradlew -q execute -PmainClass=io.temporal.samples.tracing.Starter --args="OpenTracing"
 ```
 
 3. Go to your Jaeger UI on [http://127.0.0.1:16686/search](http://127.0.0.1:16686/search)
